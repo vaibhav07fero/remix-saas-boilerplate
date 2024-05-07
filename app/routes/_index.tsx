@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
   return [
@@ -97,6 +98,10 @@ export default function Index() {
             </div>
           </div>
         </div>
+      </div>
+      {/* shadcn/ui button usage */}
+      <div className="flex justify-center items-center py-4">
+      <Button onClick={()=>console.log('clicked')}>Click Me!</Button>
       </div>
     </div>
   </section>
